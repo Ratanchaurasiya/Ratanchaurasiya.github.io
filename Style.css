@@ -1322,3 +1322,155 @@ form textarea {
 
 
 
+
+
+/* MOBILE SPECIFIC FIXES FOR HOME SECTION */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5% 2rem; /* Top padding kam kiya */
+    gap: 2.5rem; /* Gap kam kiya */
+    min-height: auto;
+  }
+  
+  .home-content {
+    order: 2;
+    width: 100%;
+  }
+  
+  /* PROFILE PHOTO KO NICHE LAYA */
+  .profile-container {
+    order: 1;
+    max-width: 25rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem auto 1rem; /* Top margin badhaya, bottom margin kam kiya */
+    border-width: 0.8rem;
+    position: relative;
+    top: 5px; /* Thoda aur niche */
+  }
+  
+  .profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.95);
+  }
+  
+  /* Text को थोड़ा ऊपर लाया */
+  .home-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-top: 0.5rem; /* Kam margin top */
+  }
+  
+  .home-content h1 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 0.3rem; /* Kam margin bottom */
+  }
+  
+  .home-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .home-content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem; /* Kam margin bottom */
+  }
+  
+  /* Social icons ko भी थोड़ा ऊपर */
+  .home-sci {
+    justify-content: center;
+    margin: 1.5rem 0; /* Kam margin */
+  }
+  
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem; /* Kam gap */
+    width: 100%;
+    margin-top: 1rem; /* Kam margin top */
+  }
+  
+  .btn-box {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem; /* Thoda kam padding */
+    font-size: 1.6rem;
+    margin: 0.2rem 0; /* Kam margin */
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .home {
+    padding: 2rem 5% 1.5rem; /* Aur kam padding */
+  }
+  
+  .profile-container {
+    max-width: 22rem;
+    width: 22rem;
+    height: 22rem;
+    margin: 1.5rem auto 0.5rem; /* Aur adjust */
+    top: 5px; /* Thoda kam niche */
+  }
+  
+  .home-content h2 {
+    font-size: 2.4rem;
+    margin-top: 0.3rem;
+  }
+  
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .home-content h3 {
+    font-size: 1.9rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .home-sci {
+    margin: 1.2rem 0;
+  }
+  
+  .home-sci a {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  }
+  
+  .btn-group {
+    margin-top: 0.8rem;
+    gap: 0.6rem;
+  }
+}
+
+/* Agar aur niche chahiye photo to ye try karein */
+@media (max-width: 768px) {
+  /* OPTION 1: Home section ke padding se control */
+  .home {
+    padding-top: 1rem !important; /* Bahut kam top padding */
+  }
+  
+  /* OPTION 2: Profile container ko aur niche */
+  .profile-container {
+    margin-top: 3rem !important; /* Zyada top margin */
+    margin-bottom: 0.5rem !important;
+  }
+  
+  
+  .home-content {
+    margin-top: -1rem !important; 
+  }
+}
+
+
