@@ -40,7 +40,7 @@ body {
 }
 
 section {
-  min-height: 107vh;
+  min-height: 110vh;
   padding: 10rem 7% 2rem;
 }
 
@@ -1319,5 +1319,6 @@ form textarea {
     position: relative !important;
     z-index: 20 !important;
 }
+
 
 
