@@ -1434,7 +1434,7 @@ form textarea {
 /* ========== SMALL PHONES ========== */
 @media (max-width: 480px) {
   .home {
-    padding: 20rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
+    padding:   10rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
     gap: 2rem;
   }
   
@@ -1478,7 +1478,7 @@ form textarea {
 /* ========== EXTRA SMALL ========== */
 @media (max-width: 360px) {
   .home {
-    padding: 15rem 4% 3.5rem; /* Fixed: Consistent padding */
+    padding: 10rem 4% 3.5rem; /* Fixed: Consistent padding */
     gap: 1.5rem;
   }
   
@@ -1518,4 +1518,5 @@ form textarea {
     font-size: 1.4rem;
   }
 }
+
 
