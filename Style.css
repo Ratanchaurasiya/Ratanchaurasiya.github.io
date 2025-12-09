@@ -40,7 +40,7 @@ body {
 }
 
 section {
-  min-height: 110vh;
+  min-height: 90vh;
   padding: 10rem 7% 2rem;
 }
 
@@ -245,6 +245,8 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+   min-width: 100%;
+  min-height: 100%;
 }
 
 .profile-container:hover img {
@@ -1248,11 +1250,68 @@ footer {
 
 
 
+/* Safe and Compatible Contact Form CSS */
 
+form {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
 
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #fff;
+    outline: none;
+    display: block;
+}
 
+form input:focus,
+form textarea:focus {
+    border-color: #6c63ff;
+}
 
+form textarea {
+    height: 120px;
+    resize: none;
+}
 
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 20;
+}
+
+form button:hover {
+    background: #4f46ff;
+}
+
+/* VERY IMPORTANT: Prevent anything from blocking the form */
+form *,
+form button,
+form input,
+form textarea {
+    position: relative !important;
+    z-index: 20 !important;
+}
 
 
 
@@ -1271,7 +1330,7 @@ footer {
   .home {
     flex-direction: column;
     text-align: center;
-    padding: 15rem 5% 2rem;
+    padding: 3rem 5% 2rem;
     gap: 2.5rem;
     min-height: auto;
   }
@@ -1375,7 +1434,7 @@ footer {
 /* ========== SMALL PHONES ========== */
 @media (max-width: 480px) {
   .home {
-    padding: 5rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
+    padding: 3rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
     gap: 2rem;
   }
   
@@ -1419,7 +1478,7 @@ footer {
 /* ========== EXTRA SMALL ========== */
 @media (max-width: 360px) {
   .home {
-    padding: 50rem 4% 1.5rem; /* Fixed: Consistent padding */
+    padding: 15rem 4% 3.5rem; /* Fixed: Consistent padding */
     gap: 1.5rem;
   }
   
@@ -1459,6 +1518,3 @@ footer {
     font-size: 1.4rem;
   }
 }
-
-
-
