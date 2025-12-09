@@ -1262,12 +1262,16 @@ footer {
 
 
 
+
+
+
+
 /* ========== CORRECTED MOBILE CSS ========== */
 @media (max-width: 768px) {
   .home {
     flex-direction: column;
     text-align: center;
-    padding: 4rem 5% 3rem;
+    padding: 3rem 5% 2rem;
     gap: 2.5rem;
     min-height: auto;
   }
@@ -1280,26 +1284,24 @@ footer {
   /* CORRECT PROFILE CONTAINER SIZE */
   .profile-container {
     order: 1;
-    width: 220px;      
-    height: 220px;     
-    max-width: 220px; 
+    width: 280px;
+    height: 280px;
+    max-width: 280px;
     margin: 0 auto 1.5rem;
-    border-width: 10px;
-    border-color: var(--main-color);
-    border-style: solid;
+    border: 10px solid var(--main-color);
     border-radius: 50%;
     overflow: hidden;
   }
   
-  
+  /* PHOTO KO POORA DIKHAYEGA - FIXED */
   .profile-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain !important;  
+    object-fit: cover; /* Changed from contain to cover for better cropping */
     display: block;
   }
   
-  
+  /* Text Styling */
   .home-content h2 {
     font-size: 2.2rem;
     line-height: 1.2;
@@ -1330,7 +1332,7 @@ footer {
     opacity: 0.9;
   }
   
-  
+  /* Social Icons */
   .home-sci {
     justify-content: center;
     margin: 1.8rem 0;
@@ -1350,7 +1352,7 @@ footer {
     transition: all 0.3s ease;
   }
   
-  
+  /* Buttons */
   .btn-group {
     flex-direction: column;
     align-items: center;
@@ -1370,17 +1372,17 @@ footer {
   }
 }
 
-
+/* ========== SMALL PHONES ========== */
 @media (max-width: 480px) {
   .home {
-    padding: 3rem 4% 2rem;
+    padding: 3rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
+    gap: 2rem;
   }
-   
-
+  
   .profile-container {
-    width: 250px;
-    height: 220px;
-    max-width: 250px;
+    width: 240px;
+    height: 240px;
+    max-width: 240px;
     border-width: 8px;
   }
   
@@ -1408,7 +1410,7 @@ footer {
   }
   
   .btn-box {
-    max-width: 200px;
+    max-width: 250px;
     padding: 1rem 1.8rem;
     font-size: 1.5rem;
   }
@@ -1416,20 +1418,44 @@ footer {
 
 /* ========== EXTRA SMALL ========== */
 @media (max-width: 360px) {
+  .home {
+    padding: 15rem 4% 1.5rem; /* Fixed: Consistent padding */
+    gap: 1.5rem;
+  }
+  
   .profile-container {
-    width: 200px;
-    height: 215px;
-    max-width: 200px;
+    width: 220px;
+    height: 220px; /* Fixed: Changed from 215px to 220px for consistency */
+    max-width: 220px;
+    border-width: 6px;
   }
   
   .home-content h1 {
     font-size: 2.3rem;
   }
   
+  .home-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .home-content h3 {
+    font-size: 1.5rem;
+  }
+  
   .home-content p {
     font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-sci a {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
+  }
+  
+  .btn-box {
+    max-width: 220px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.4rem;
   }
 }
-
-
-
