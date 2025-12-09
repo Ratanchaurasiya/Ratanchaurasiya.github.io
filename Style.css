@@ -1373,7 +1373,7 @@ footer {
 
 @media (max-width: 480px) {
   .home {
-    padding: 10rem 4% 2rem;
+    padding: 3rem 4% 2rem;
   }
    
 
@@ -1430,3 +1430,4 @@ footer {
     font-size: 1.3rem;
   }
 }
+
