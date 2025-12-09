@@ -1434,7 +1434,7 @@ form textarea {
 /* ========== SMALL PHONES ========== */
 @media (max-width: 480px) {
   .home {
-    padding: 3rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
+    padding: 20rem 4% 2rem; /* Fixed: Reduced from 10rem to 3rem */
     gap: 2rem;
   }
   
@@ -1518,3 +1518,4 @@ form textarea {
     font-size: 1.4rem;
   }
 }
+
