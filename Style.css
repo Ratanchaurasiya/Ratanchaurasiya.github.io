@@ -1417,7 +1417,7 @@ footer {
 /* ========== EXTRA SMALL ========== */
 @media (max-width: 360px) {
   .profile-container {
-    width: 220px;
+    width: 200px;
     height: 215px;
     max-width: 200px;
   }
@@ -1430,5 +1430,6 @@ footer {
     font-size: 1.3rem;
   }
 }
+
 
 
