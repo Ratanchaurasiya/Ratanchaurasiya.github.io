@@ -1271,7 +1271,7 @@ footer {
   .home {
     flex-direction: column;
     text-align: center;
-    padding: 3rem 5% 2rem;
+    padding: 15rem 5% 2rem;
     gap: 2.5rem;
     min-height: auto;
   }
@@ -1459,4 +1459,5 @@ footer {
     font-size: 1.4rem;
   }
 }
+
 
