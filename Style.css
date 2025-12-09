@@ -1458,7 +1458,7 @@ form textarea {
 @media (max-width: 768px) {
   /* OPTION 1: Home section ke padding se control */
   .home {
-    padding-top: 1rem !important; /* Bahut kam top padding */
+    padding-top: 11rem !important; /* Bahut kam top padding */
   }
   
   /* OPTION 2: Profile container ko aur niche */
@@ -1472,5 +1472,6 @@ form textarea {
     margin-top: -1rem !important; 
   }
 }
+
 
 
