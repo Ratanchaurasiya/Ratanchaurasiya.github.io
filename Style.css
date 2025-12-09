@@ -1280,9 +1280,9 @@ footer {
   /* CORRECT PROFILE CONTAINER SIZE */
   .profile-container {
     order: 1;
-    width: 280px;      
-    height: 280px;     
-    max-width: 280px; 
+    width: 220px;      
+    height: 220px;     
+    max-width: 220px; 
     margin: 0 auto 1.5rem;
     border-width: 10px;
     border-color: var(--main-color);
@@ -1430,4 +1430,5 @@ footer {
     font-size: 1.3rem;
   }
 }
+
 
