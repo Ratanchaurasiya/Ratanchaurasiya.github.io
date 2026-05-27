@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Ratan Chaurasiya - Full Stack Developer & Data Analyst" />
+  <meta name="author" content="Ratan Chaurasiya" />
+  <meta name="keywords" content="Contact Ratan Chaurasiya, Email, Phone, Developer, Analyst" />
+  <title>Contact Me | Ratan Chaurasiya</title>
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="contact.css" />
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Scripts (deferred for performance) -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+</head>
+<body>
+  <!-- Background Glow Decorations -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+  <!-- Header Section -->
+  <header class="header">
+    <a href="index.html" class="logo">Ratan<span>.</span></a>
+    
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="dashboards.html">Dashboards</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class='bx bx-moon'></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" style="padding-top: 12rem;">
+    <div class="contact-text">
+      <h2>Contact <span>Me</span></h2>
+      <h4>Let's Work Together</h4>
+      <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you as soon as possible!</p>
+
+      <ul class="contact-list">
+        <li><i class='bx bxs-envelope'></i> ratanchaurasiya61@gmail.com</li>
+        <li><i class='bx bxs-phone'></i> +91 6390035039</li>
+        <li><i class='bx bxs-map'></i> Uttar Pradesh, India</li>
+      </ul>
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/RatanChaurasiya" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="https://github.com/Ratanchaurasiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.instagram.com/ratan_chaurasiya61" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ratan-chaurasiya-82288733a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <h2 class="contact-title">Send a Message</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">  
+        <input type="hidden" name="access_key" value="a87ffa7b-2a2c-42fe-a7ee-c21f4f1cc72b">
+        <input type="hidden" name="submission_source" value="Portfolio Contact Form">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="last-text">
+      <p>Copyright &copy; <span id="copyright-year">2025</span> by Ratan Chaurasiya | All Rights Reserved.</p>
+    </div>
+    <a href="#" class="top" aria-label="Back to top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

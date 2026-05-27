@@ -1,0 +1,240 @@
+/* ========== ABOUT & TIMELINE JOURNEY STYLES ========== */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.about-img {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img .img-wrapper {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background: var(--button-gradient);
+  padding: 0.6rem;
+  box-shadow: 0 1.5rem 3.5rem var(--main-glow);
+  animation: morph 8s ease-in-out infinite reverse;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%; /* Center the face for portrait photo */
+  border-radius: inherit;
+}
+
+.about-text {
+  flex: 1.2;
+}
+
+.about-text h2 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.05rem;
+}
+
+.about-text h4 {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.about-info {
+  display: flex;
+  gap: 2.5rem;
+  margin: 3.5rem 0;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  background: var(--card-bg);
+  padding: 1.2rem 2.4rem;
+  border-radius: 1.6rem;
+  border: 0.1rem solid var(--border-color);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  transition: var(--transition);
+  box-shadow: 0 0.4rem 1.5rem var(--shadow-color);
+}
+
+.info-box:hover {
+  transform: translateY(-0.3rem);
+  border-color: var(--border-hover);
+  background: var(--card-hover-bg);
+}
+
+.info-box i {
+  font-size: 2.4rem;
+  color: var(--main-color);
+}
+
+.info-box span {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* ========== TIMELINE (JOURNEY) ========== */
+.journey {
+  padding: 7rem 9% 5rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 0.3rem;
+  background: var(--button-gradient);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.3rem;
+  opacity: 0.8;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1.5rem 4.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--bg-color);
+  border: 0.4rem solid var(--main-color);
+  border-radius: 50%;
+  top: 2rem;
+  z-index: 2;
+  box-shadow: 0 0 1rem var(--main-glow);
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -0.9rem;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -0.9rem;
+}
+
+.timeline-content {
+  background: var(--card-bg);
+  padding: 2.8rem;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--border-color);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  transition: var(--transition);
+  box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content:hover {
+  transform: translateY(-0.5rem);
+  border-color: var(--border-hover);
+  box-shadow: 0 1.2rem 3.5rem var(--glow-color);
+  background: var(--card-hover-bg);
+}
+
+.timeline-date {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 0.8rem;
+}
+
+.timeline-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.timeline-content p {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ========== ABOUT & JOURNEY RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+  }
+  
+  .about-info {
+    justify-content: center;
+  }
+  
+  .timeline::before {
+    left: 2rem;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 5.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-item::before {
+    left: 1.1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-img .img-wrapper {
+    width: 28rem;
+    height: 28rem;
+  }
+  
+  .about-text h2 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img .img-wrapper {
+    width: 23rem;
+    height: 23rem;
+  }
+}

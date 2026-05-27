@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Power BI & Excel Sales and Analytics Dashboards by Ratan Chaurasiya" />
+  <meta name="author" content="Ratan Chaurasiya" />
+  <meta name="keywords" content="Power BI, Excel, Dashboards, Data Visualization, Ratan Chaurasiya" />
+  <title>Dashboards | Ratan Chaurasiya</title>
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Scripts (deferred for performance) -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+</head>
+<body>
+  <!-- Background Glow Decorations -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+  <!-- Header Section -->
+  <header class="header">
+    <a href="index.html" class="logo">Ratan<span>.</span></a>
+    
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="dashboards.html" class="active">Dashboards</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class='bx bx-moon'></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Dashboards Section -->
+  <section id="dashboards" class="dashboards" style="padding-top: 12rem;">
+    <div class="main-text">
+      <h1>Power BI & Excel <span>Dashboards</span></h1>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="bi_dashboard.png" alt="Power BI Sales Dashboard" loading="lazy">
+          <div class="layer">
+            <h5>Sales & Inventory Dashboard</h5>
+            <p>Comprehensive analysis of Blinkit's 2025 product sales and ratings across Tier 1, Tier 2, and Tier 3 locations.</p>
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="layer-buttons">
+              <a href="https://app.powerbi.com/groups/me/reports/b30f7405-6d75-49a1-8016-132f460d9dd9/ecfc47970904230cde5a?experience=power-bi" target="_blank" rel="noopener noreferrer" aria-label="View Power BI Dashboard">
+                <i class="bx bx-link-external"></i>
+              </a>
+              <button class="btn-detail" data-project="blinkit" aria-label="View Dashboard Case Study">
+                <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <img src="amazoe_dashboard.png" alt="Power BI Sales Dashboard" loading="lazy">
+          <div class="layer">
+            <h5>Amazon Sales Dashboard using Power BI Desktop</h5>
+            <p>Built a dynamic sales analytics dashboard using Power BI, visualizing key business metrics like revenue, category performance, and shipping insights. Designed interactive visuals (bar charts, pie charts, KPI cards, slicers) to provide actionable insights on sales trends, B2B distribution, and Fulfilment channels.</p>
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="layer-buttons">
+              <a href="https://app.powerbi.com/groups/me/reports/6b344754-52ae-4bc8-97f7-cef7c63e8024/60570ea83e4a18eb55d4?experience=power-bi" target="_blank" rel="noopener noreferrer" aria-label="View Power BI Dashboard">
+                <i class="bx bx-link-external"></i>
+              </a>
+              <button class="btn-detail" data-project="amazon" aria-label="View Dashboard Case Study">
+                <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="excel_analytics.png" alt="Excel Analytics Dashboard" loading="lazy">
+          <div class="layer">
+            <h5>Excel Analytics Dashboard</h5>
+            <p>Dynamic Excel dashboard with pivot tables, advanced formulas, and interactive visualizations for business insights.</p>
+            <div class="tech-tags">
+              <span>Excel</span>
+              <span>Pivot Tables</span>
+              <span>Power Query</span>
+            </div>
+            <div class="layer-buttons">
+              <a href="docs/excel-dashboard.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Excel Dashboard">
+                <i class="bx bx-link-external"></i>
+              </a>
+              <button class="btn-detail" data-project="excel" aria-label="View Dashboard Case Study">
+                <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="last-text">
+      <p>Copyright &copy; <span id="copyright-year">2025</span> by Ratan Chaurasiya | All Rights Reserved.</p>
+    </div>
+    <a href="#" class="top" aria-label="Back to top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
+  </footer>
+
+  <!-- Case Study Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <div class="modal-body">
+          <!-- Dynamically populated by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

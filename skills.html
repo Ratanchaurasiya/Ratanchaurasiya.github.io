@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Technical & Professional Skills of Ratan Chaurasiya" />
+  <meta name="author" content="Ratan Chaurasiya" />
+  <meta name="keywords" content="Full Stack Developer, Data Analyst, Web Developer, Power BI, Portfolio, Skills" />
+  <title>My Skills | Ratan Chaurasiya</title>
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="skills.css" />
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Scripts (deferred for performance) -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+</head>
+<body>
+  <!-- Background Glow Decorations -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+  <!-- Header Section -->
+  <header class="header">
+    <a href="index.html" class="logo">Ratan<span>.</span></a>
+    
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html" class="active">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="dashboards.html">Dashboards</a>
+      <a href="contact.html">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class='bx bx-moon'></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section" style="padding-top: 12rem;">
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <div class="skills-wrapper">
+      <!-- Technical Skills -->
+      <div class="container1">
+        <h2 class="heading1">Technical Skills</h2>
+        <div class="Technical-bars">
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-html5' style="color: #e34f26;"></i>
+                <span>HTML</span>
+              </div>
+              <span class="percent-tag">95%</span>
+            </div>
+            <div class="progress-line html"><span style="width: 0%;" data-percent="95%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-css3' style="color: #264de4;"></i>
+                <span>CSS</span>
+              </div>
+              <span class="percent-tag">85%</span>
+            </div>
+            <div class="progress-line css"><span style="width: 0%;" data-percent="85%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-javascript' style="color: #f7df1e;"></i>
+                <span>JavaScript</span>
+              </div>
+              <span class="percent-tag">80%</span>
+            </div>
+            <div class="progress-line javascript"><span style="width: 0%;" data-percent="80%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-desktop' style="color: #61dbfb;"></i>
+                <span>Responsive Design</span>
+              </div>
+              <span class="percent-tag">90%</span>
+            </div>
+            <div class="progress-line responsive"><span style="width: 0%;" data-percent="90%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-data' style="color: #00758f;"></i>
+                <span>MySQL</span>
+              </div>
+              <span class="percent-tag">85%</span>
+            </div>
+            <div class="progress-line mysql"><span style="width: 0%;" data-percent="85%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-chip' style="color: #7cb518;"></i>
+                <span>IoT</span>
+              </div>
+              <span class="percent-tag">75%</span>
+            </div>
+            <div class="progress-line nodemcu"><span style="width: 0%;" data-percent="75%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-code-curly' style="color: #004482;"></i>
+                <span>C & C++</span>
+              </div>
+              <span class="percent-tag">80%</span>
+            </div>
+            <div class="progress-line c-cpp"><span style="width: 0%;" data-percent="80%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-server' style="color: #4479a1;"></i>
+                <span>DBMS</span>
+              </div>
+              <span class="percent-tag">88%</span>
+            </div>
+            <div class="progress-line dbms"><span style="width: 0%;" data-percent="88%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-network-chart' style="color: #ff6b35;"></i>
+                <span>Data Structures</span>
+              </div>
+              <span class="percent-tag">82%</span>
+            </div>
+            <div class="progress-line ds"><span style="width: 0%;" data-percent="82%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-bar-chart-alt-2' style="color: #f2c811;"></i>
+                <span>Power BI</span>
+              </div>
+              <span class="percent-tag">87%</span>
+            </div>
+            <div class="progress-line powerbi"><span style="width: 0%;" data-percent="87%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-python' style="color: #3776ab;"></i>
+                <span>Python</span>
+              </div>
+              <span class="percent-tag">78%</span>
+            </div>
+            <div class="progress-line python"><span style="width: 0%;" data-percent="78%"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="container1">
+        <h2 class="heading1">Professional Skills</h2>
+        <div class="radial-bars">
+          <div class="radial-bar">
+            <svg viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">70%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text">Communication</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">80%</div>
+            <div class="text">Teamwork</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">75%</div>
+            <div class="text">Creativity</div>
+          </div>
+          
+          <div class="radial-bar">
+            <svg viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">75%</div>
+            <div class="text">Time Management</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-6" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">75%</div>
+            <div class="text">Critical Thinking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="last-text">
+      <p>Copyright &copy; <span id="copyright-year">2025</span> by Ratan Chaurasiya | All Rights Reserved.</p>
+    </div>
+    <a href="#" class="top" aria-label="Back to top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
