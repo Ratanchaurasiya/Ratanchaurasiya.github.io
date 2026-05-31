@@ -3,8 +3,8 @@
 Welcome to the official repository of my personal portfolio website and analytics hub. I am a **Full Stack Developer & Data Analyst** pursuing a B.Tech in Information Technology. This website is a premium, interactive showcase of my frontend engineering, database architectures, and business intelligence dashboards.
 
 📊 **Live Portals:**
-*   **Portfolio Website:** [ratanchaurasiya.github.io](https://ratanchaurasiya.github.io/)
-*   **Banking System Demo:** [Banking-System Demo](https://ratanchaurasiya.github.io/Banking-System/)
+*   **Portfolio Website:** [ratanchaurasiya.github.io](https://ratanchaurasiya-github-io.vercel.app/)
+*   **Banking System Demo:** [Banking-System Demo](https://hex-chal-digital-bank-w76e-gf92f07zr-ratanchaurasiyas-projects.vercel.app/)
 *   **Attendance Management Demo:** [Attendance Management Demo](https://ratanchaurasiya.github.io/attendance-management-system/)
 
 ---
