@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ratan Chaurasiya - Full Stack Developer & Data Analyst Portfolio showcasing web development, database solutions, and Power BI dashboards" />
+  <meta name="author" content="Ratan Chaurasiya" />
+  <meta name="keywords" content="Full Stack Developer, Data Analyst, Web Developer, Power BI, Portfolio" />
+  <title>Ratan Chaurasiya | Full Stack Developer & Data Analyst</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="skills.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="achievements.css" />
+  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Scripts (deferred for performance) -->
+  <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+</head>
+<body>
+  <!-- Background Glow Decorations -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+  <!-- Header Section -->
+  <header class="header">
+    <a href="#home" class="logo">Ratan<span>.</span></a>
+    
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class='bx bx-moon'></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h2>Hello, I'm</h2>
+      <h1>Ratan Chaurasiya</h1>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p>A passionate developer specializing in web development, database solutions, and data visualization with Power BI.</p>
+
+      <div class="home-sci">
+        <a href="https://www.facebook.com/RatanChaurasiya" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://github.com/Ratanchaurasiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.instagram.com/ratan_chaurasiya61" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ratan-chaurasiya-82288733a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#contact" class="btn-box">Contact Me</a>
+        <a href="https://drive.google.com/file/d/18-IqfoLFbykS2uAwHT8NRCuh37gbWHM5/view" class="btn-box" target="_blank" rel="noopener noreferrer">View CV</a>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-wrapper">
+        <img src="picture.jpg" alt="Ratan Chaurasiya - Portfolio Profile" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section-wrapper">
+    <div class="about">
+      <div class="about-img">
+        <div class="img-wrapper">
+          <img src="picture.jpg" alt="About Ratan Chaurasiya" loading="lazy">
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Full Stack Developer & Data Analyst</h4>
+        <p>Hello! I'm Ratan Chaurasiya, a passionate technology enthusiast currently pursuing my B.Tech in Information Technology. I specialize in building web applications and creating insightful data visualizations. With strong knowledge of programming languages like Python, JavaScript, and database technologies, I enjoy solving complex problems through code and data analysis.</p>
+        <p>My journey in tech has equipped me with skills in both frontend and backend development, along with expertise in creating interactive dashboards using Power BI and Excel. I'm constantly learning new technologies to enhance my skills and deliver better solutions.</p>
+        <div class="about-info">
+          <div class="info-box">
+            <i class='bx bxs-graduation'></i>
+            <span>B.Tech in IT</span>
+          </div>
+          <div class="info-box">
+            <i class='bx bx-code-alt'></i>
+            <span>3+ Projects</span>
+          </div>
+        </div>
+        <a href="#skills" class="btn-box">My Skills</a>
+      </div>
+    </div>
+
+    <!-- Learning Journey Section -->
+    <div class="journey">
+      <div class="journey-header">
+        <span class="journey-kicker">Growth Roadmap</span>
+        <h2 class="sub-title">My <span>Learning Journey</span></h2>
+        <p>Key milestones that shaped my technical foundation, project experience, and data analytics direction.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class='bx bx-code-curly'></i></div>
+            <span class="timeline-type">Programming Foundation</span>
+            <h3>Started Programming</h3>
+            <p>Began with Python and C++ basics, learning fundamental programming concepts and logic building.</p>
+            <div class="timeline-tools">
+              <span>Python</span>
+              <span>C++</span>
+              <span>Logic Building</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class='bx bx-layout'></i></div>
+            <span class="timeline-type">Frontend Development</span>
+            <h3>Web Development</h3>
+            <p>Mastered HTML, CSS, and JavaScript to build responsive and interactive websites.</p>
+            <div class="timeline-tools">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class='bx bx-data'></i></div>
+            <span class="timeline-type">Data Management</span>
+            <h3>Database Systems</h3>
+            <p>Gained expertise in SQL, database design, and built full-stack database applications.</p>
+            <div class="timeline-tools">
+              <span>SQL</span>
+              <span>DBMS</span>
+              <span>Data Modeling</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+            <span class="timeline-type">Business Intelligence</span>
+            <h3>Data Visualization</h3>
+            <p>Developed advanced skills in Power BI, DAX, and Excel for data analysis and reporting.</p>
+            <div class="timeline-tools">
+              <span>Power BI</span>
+              <span>DAX</span>
+              <span>Excel</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <div class="timeline-icon"><i class='bx bx-network-chart'></i></div>
+            <span class="timeline-type">Computer Science Core</span>
+            <h3>Data Structures & Algorithms</h3>
+            <p>Learned arrays, linked lists, trees, graphs, and algorithm optimization techniques.</p>
+            <div class="timeline-tools">
+              <span>Arrays</span>
+              <span>Trees</span>
+              <span>Graphs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h1 class="sub-title">My <span>Skills</span></h1>
+    <p class="skills-intro">A focused mix of development, database, analytics, and collaboration skills used to build practical digital solutions.</p>
+    <div class="skills-wrapper">
+      <!-- Technical Skills -->
+      <div class="container1">
+        <div class="skill-panel-header">
+          <span class="skill-panel-kicker">Core Stack</span>
+          <h2 class="heading1">Technical Skills</h2>
+        </div>
+        <div class="Technical-bars">
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-html5' style="color: #e34f26;"></i>
+                <span>HTML</span>
+              </div>
+              <span class="percent-tag">95%</span>
+            </div>
+            <div class="progress-line html"><span style="width: 0%;" data-percent="95%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-css3' style="color: #264de4;"></i>
+                <span>CSS</span>
+              </div>
+              <span class="percent-tag">85%</span>
+            </div>
+            <div class="progress-line css"><span style="width: 0%;" data-percent="85%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-javascript' style="color: #f7df1e;"></i>
+                <span>JavaScript</span>
+              </div>
+              <span class="percent-tag">80%</span>
+            </div>
+            <div class="progress-line javascript"><span style="width: 0%;" data-percent="80%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-desktop' style="color: #61dbfb;"></i>
+                <span>Responsive Design</span>
+              </div>
+              <span class="percent-tag">90%</span>
+            </div>
+            <div class="progress-line responsive"><span style="width: 0%;" data-percent="90%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-data' style="color: #00758f;"></i>
+                <span>MySQL</span>
+              </div>
+              <span class="percent-tag">85%</span>
+            </div>
+            <div class="progress-line mysql"><span style="width: 0%;" data-percent="85%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-chip' style="color: #7cb518;"></i>
+                <span>IoT</span>
+              </div>
+              <span class="percent-tag">75%</span>
+            </div>
+            <div class="progress-line nodemcu"><span style="width: 0%;" data-percent="75%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-code-curly' style="color: #004482;"></i>
+                <span>C & C++</span>
+              </div>
+              <span class="percent-tag">80%</span>
+            </div>
+            <div class="progress-line c-cpp"><span style="width: 0%;" data-percent="80%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-server' style="color: #4479a1;"></i>
+                <span>DBMS</span>
+              </div>
+              <span class="percent-tag">88%</span>
+            </div>
+            <div class="progress-line dbms"><span style="width: 0%;" data-percent="88%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-network-chart' style="color: #ff6b35;"></i>
+                <span>Data Structures</span>
+              </div>
+              <span class="percent-tag">82%</span>
+            </div>
+            <div class="progress-line ds"><span style="width: 0%;" data-percent="82%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bx-bar-chart-alt-2' style="color: #f2c811;"></i>
+                <span>Power BI</span>
+              </div>
+              <span class="percent-tag">87%</span>
+            </div>
+            <div class="progress-line powerbi"><span style="width: 0%;" data-percent="87%"></span></div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <div class="skill-label">
+                <i class='bx bxl-python' style="color: #3776ab;"></i>
+                <span>Python</span>
+              </div>
+              <span class="percent-tag">78%</span>
+            </div>
+            <div class="progress-line python"><span style="width: 0%;" data-percent="78%"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="container1">
+        <div class="skill-panel-header">
+          <span class="skill-panel-kicker">Work Style</span>
+          <h2 class="heading1">Professional Skills</h2>
+        </div>
+        <div class="professional-grid">
+          <div class="professional-card">
+            <i class='bx bx-bulb'></i>
+            <div>
+              <h3>Problem Solving</h3>
+              <p>Breaks complex requirements into clear, buildable steps.</p>
+            </div>
+            <span>70%</span>
+          </div>
+
+          <div class="professional-card">
+            <i class='bx bx-conversation'></i>
+            <div>
+              <h3>Communication</h3>
+              <p>Explains ideas, progress, and decisions with clarity.</p>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="professional-card">
+            <i class='bx bx-group'></i>
+            <div>
+              <h3>Teamwork</h3>
+              <p>Collaborates smoothly across project and learning environments.</p>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="professional-card">
+            <i class='bx bx-palette'></i>
+            <div>
+              <h3>Creativity</h3>
+              <p>Designs practical interfaces with thoughtful visual choices.</p>
+            </div>
+            <span>75%</span>
+          </div>
+
+          <div class="professional-card">
+            <i class='bx bx-time-five'></i>
+            <div>
+              <h3>Time Management</h3>
+              <p>Balances learning, implementation, and delivery priorities.</p>
+            </div>
+            <span>75%</span>
+          </div>
+
+          <div class="professional-card">
+            <i class='bx bx-search-alt'></i>
+            <div>
+              <h3>Critical Thinking</h3>
+              <p>Reviews data, code, and outcomes before making decisions.</p>
+            </div>
+            <span>75%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="main-text">
+      <h1>My <span>Projects</span></h1>
+      <div class="project-filter-panel">
+        <div class="project-slicer">
+          <label for="project-slicer">Project Slicer</label>
+          <div class="slicer-select-wrap">
+            <i class='bx bx-slider-alt'></i>
+            <select id="project-slicer" aria-label="Filter projects by category">
+              <option value="all">All Projects</option>
+              <option value="web">Web Apps</option>
+              <option value="database">Databases</option>
+              <option value="bi">BI & Dashboards</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="database">Databases</button>
+          <button class="filter-btn" data-filter="bi">BI & Dashboards</button>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <!-- Project 1 (Database) -->
+        <div class="row project-card" data-category="database">
+          <div class="project-preview">
+            <img src="Attendance.png" alt="Attendance Management System Project" class="project-img" loading="lazy">
+            <span class="project-type"><i class="bx bx-data"></i> Database App</span>
+          </div>
+          <div class="project-card-body">
+            <div class="achievement-icon project-icon">
+              <i class="bx bx-calendar-check"></i>
+            </div>
+            <span class="achievement-tag">Database Project</span>
+            <h3>Attendance Management System</h3>
+            <p class="issuer">HTML, CSS, JavaScript & Android</p>
+            <p class="desc">Android-based attendance system with swipe gestures and WhatsApp integration for instant report sharing.</p>
+            <div class="tech-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Android</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ratanchaurasiya.github.io/attendance-management-system/" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="View Attendance Management System">
+                Open Project <i class="bx bx-link-external"></i>
+              </a>
+              <button class="verify-btn btn-detail" data-project="attendance" aria-label="View Project Case Study">
+                Case Study <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (Web) -->
+        <div class="row project-card" data-category="web">
+          <div class="project-preview">
+            <img src="banking_dashboard.png" alt="Banking System Project" loading="lazy">
+            <span class="project-type"><i class="bx bx-window-alt"></i> Web App</span>
+          </div>
+          <div class="project-card-body">
+            <div class="achievement-icon project-icon">
+              <i class="bx bx-credit-card"></i>
+            </div>
+            <span class="achievement-tag">Web Application</span>
+            <h3>Banking System</h3>
+            <p class="issuer">JavaScript & Local Storage</p>
+            <p class="desc">Complete banking management system with account operations, secure transfers, OTP security, and detailed reporting.</p>
+            <div class="tech-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://ratanchaurasiya.github.io/Banking-System/" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="View Banking System">
+                Open Project <i class="bx bx-link-external"></i>
+              </a>
+              <button class="verify-btn btn-detail" data-project="banking" aria-label="View Project Case Study">
+                Case Study <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard 1 (BI) -->
+        <div class="row project-card" data-category="bi">
+          <div class="project-preview">
+            <img src="bi_dashboard.png" alt="Power BI Sales Dashboard" loading="lazy">
+            <span class="project-type"><i class="bx bx-bar-chart-alt-2"></i> BI Dashboard</span>
+          </div>
+          <div class="project-card-body">
+            <div class="achievement-icon project-icon">
+              <i class="bx bx-line-chart"></i>
+            </div>
+            <span class="achievement-tag">Power BI Dashboard</span>
+            <h3>Sales & Inventory Dashboard</h3>
+            <p class="issuer">Blinkit Sales Analytics</p>
+            <p class="desc">Comprehensive analysis of Blinkit's 2025 product sales and ratings across Tier 1, Tier 2, and Tier 3 locations.</p>
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://app.powerbi.com/groups/me/reports/b30f7405-6d75-49a1-8016-132f460d9dd9/ecfc47970904230cde5a?experience=power-bi" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="View Power BI Dashboard">
+                Open Dashboard <i class="bx bx-link-external"></i>
+              </a>
+              <button class="verify-btn btn-detail" data-project="blinkit" aria-label="View Dashboard Case Study">
+                Case Study <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard 2 (BI) -->
+        <div class="row project-card" data-category="bi">
+          <div class="project-preview">
+            <img src="amazoe_dashboard.png" alt="Power BI Amazon Sales Dashboard" loading="lazy">
+            <span class="project-type"><i class="bx bx-bar-chart-square"></i> BI Dashboard</span>
+          </div>
+          <div class="project-card-body">
+            <div class="achievement-icon project-icon">
+              <i class="bx bx-trending-up"></i>
+            </div>
+            <span class="achievement-tag">Power BI Dashboard</span>
+            <h3>Amazon Sales Dashboard</h3>
+            <p class="issuer">Sales & Shipping Insights</p>
+            <p class="desc">Built a dynamic sales analytics dashboard using Power BI, visualizing revenue, category performance, and shipping insights.</p>
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://app.powerbi.com/groups/me/reports/6b344754-52ae-4bc8-97f7-cef7c63e8024/60570ea83e4a18eb55d4?experience=power-bi" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="View Power BI Dashboard">
+                Open Dashboard <i class="bx bx-link-external"></i>
+              </a>
+              <button class="verify-btn btn-detail" data-project="amazon" aria-label="View Dashboard Case Study">
+                Case Study <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard 3 (BI) -->
+        <div class="row project-card" data-category="bi">
+          <div class="project-preview">
+            <img src="excel_analytics.png" alt="Excel Analytics Dashboard" loading="lazy">
+            <span class="project-type"><i class="bx bx-spreadsheet"></i> Excel Dashboard</span>
+          </div>
+          <div class="project-card-body">
+            <div class="achievement-icon project-icon">
+              <i class="bx bx-table"></i>
+            </div>
+            <span class="achievement-tag">Excel Analytics</span>
+            <h3>Excel Analytics Dashboard</h3>
+            <p class="issuer">Pivot Tables, Power Query & Formulas</p>
+            <p class="desc">Dynamic Excel dashboard with pivot tables, advanced formulas, and interactive visualizations for business insights.</p>
+            <div class="tech-tags">
+              <span>Excel</span>
+              <span>Pivot Tables</span>
+              <span>Power Query</span>
+            </div>
+            <div class="project-actions">
+              <a href="docs/excel-dashboard.pdf" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="View Excel Dashboard">
+                Open Dashboard <i class="bx bx-link-external"></i>
+              </a>
+              <button class="verify-btn btn-detail" data-project="excel" aria-label="View Dashboard Case Study">
+                Case Study <i class="bx bx-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements-section">
+    <h1 class="sub-title">My <span>Achievements</span></h1>
+    <div class="achievements-slider" aria-label="Achievements slider">
+      <button class="achievement-nav achievement-prev" type="button" aria-label="Previous achievement">
+        <i class="bx bx-chevron-left"></i>
+      </button>
+
+      <div class="achievements-viewport">
+        <div class="achievements-grid">
+          <!-- Certification 1 -->
+          <div class="achievement-card">
+            <div class="certificate-preview">
+              <img src="cert_powerbi.png" alt="Power BI Data Analyst certificate" loading="lazy" onerror="this.closest('.certificate-preview').classList.add('missing')">
+              <div class="certificate-fallback">
+                <i class="bx bx-image-add"></i>
+                <span>Add cert_powerbi.png</span>
+              </div>
+            </div>
+            <div class="achievement-icon">
+              <i class="bx bx-certification"></i>
+            </div>
+            <div class="achievement-content">
+              <span class="achievement-tag">Professional Certification</span>
+              <h3>Microsoft Certified: Power BI Data Analyst Associate</h3>
+              <p class="issuer">Microsoft (PL-300)</p>
+              <p class="desc">Demonstrated expert ability in data preparation, modeling, data visualization, and analytical dashboard deployment.</p>
+              <a href="cert_powerbi.png" target="_blank" rel="noopener noreferrer" class="verify-btn">
+                View Certificate <i class="bx bx-file"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="achievement-card">
+            <div class="certificate-preview">
+              <img src="cert_leetcode.png" alt="Coding challenge certificate" loading="lazy" onerror="this.closest('.certificate-preview').classList.add('missing')">
+              <div class="certificate-fallback">
+                <i class="bx bx-image-add"></i>
+                <span>Add cert_leetcode.png</span>
+              </div>
+            </div>
+            <div class="achievement-icon">
+              <i class="bx bx-code-alt"></i>
+            </div>
+            <div class="achievement-content">
+              <span class="achievement-tag">Coding Milestone</span>
+              <h3>200+ Solved Challenges</h3>
+              <p class="issuer">LeetCode & HackerRank</p>
+              <p class="desc">Solved 200+ challenges in C++, Python, and SQL, focusing on data structures, query optimization, and algorithm efficiency.</p>
+              <a href="cert_leetcode.png" target="_blank" rel="noopener noreferrer" class="verify-btn">
+                View Certificate <i class="bx bx-file"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification 3 -->
+          <div class="achievement-card">
+            <div class="certificate-preview">
+              <img src="cert_sql.png" alt="SQL Advanced certificate" loading="lazy" onerror="this.closest('.certificate-preview').classList.add('missing')">
+              <div class="certificate-fallback">
+                <i class="bx bx-image-add"></i>
+                <span>Add cert_sql.png</span>
+              </div>
+            </div>
+            <div class="achievement-icon">
+              <i class="bx bx-data"></i>
+            </div>
+            <div class="achievement-content">
+              <span class="achievement-tag">Database Specialization</span>
+              <h3>SQL (Advanced) Certification</h3>
+              <p class="issuer">HackerRank</p>
+              <p class="desc">Validated advanced skills in relational database concepts, complex queries, subqueries, and performance tuning.</p>
+              <a href="cert_sql.png" target="_blank" rel="noopener noreferrer" class="verify-btn">
+                View Certificate <i class="bx bx-file"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Certification 4 -->
+          <div class="achievement-card">
+            <div class="certificate-preview">
+              <img src="cert_python.png" alt="Python for Data Science certificate" loading="lazy" onerror="this.closest('.certificate-preview').classList.add('missing')">
+              <div class="certificate-fallback">
+                <i class="bx bx-image-add"></i>
+                <span>Add cert_python.png</span>
+              </div>
+            </div>
+            <div class="achievement-icon">
+              <i class="bx bxl-python"></i>
+            </div>
+            <div class="achievement-content">
+              <span class="achievement-tag">Programming Specialist</span>
+              <h3>Python for Data Science</h3>
+              <p class="issuer">IBM / Cognitive Class</p>
+              <p class="desc">Certified in Python programming fundamentals, data structures, data manipulation, and exploratory analysis.</p>
+              <a href="cert_python.png" target="_blank" rel="noopener noreferrer" class="verify-btn">
+                View Certificate <i class="bx bx-file"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="achievement-nav achievement-next" type="button" aria-label="Next achievement">
+        <i class="bx bx-chevron-right"></i>
+      </button>
+    </div>
+    <div class="achievement-dots" aria-label="Achievement slider pagination"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact <span>Me</span></h2>
+      <h4>Let's Work Together</h4>
+      <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you as soon as possible!</p>
+
+      <ul class="contact-list">
+        <li><i class='bx bxs-envelope'></i> ratanchaurasiya61@gmail.com</li>
+        <li><i class='bx bxs-phone'></i> +91 6390035039</li>
+        <li><i class='bx bxs-map'></i> Uttar Pradesh, India</li>
+      </ul>
+      <div class="contact-icons">
+        <a href="https://www.facebook.com/RatanChaurasiya" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="https://github.com/Ratanchaurasiya" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.instagram.com/ratan_chaurasiya61" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ratan-chaurasiya-82288733a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <h2 class="contact-title">Send a Message</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">  
+        <input type="hidden" name="access_key" value="a87ffa7b-2a2c-42fe-a7ee-c21f4f1cc72b">
+        <input type="hidden" name="submission_source" value="Portfolio Contact Form">
+        
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="last-text">
+      <p>Copyright &copy; <span id="copyright-year">2025</span> by Ratan Chaurasiya | All Rights Reserved.</p>
+    </div>
+    <a href="#" class="top" aria-label="Back to top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
+  </footer>
+
+  <!-- Case Study Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <div class="modal-body">
+          <!-- Dynamically populated by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

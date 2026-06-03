@@ -1,0 +1,562 @@
+/* ========== PROJECTS & DASHBOARDS STYLES ========== */
+.main-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-text h1 {
+  font-size: 4.5rem;
+  letter-spacing: -0.05rem;
+}
+
+.project-filter-panel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 98rem;
+  margin: 2.5rem auto 3.5rem;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  border: 0.1rem solid var(--border-color);
+  background: var(--card-bg);
+  box-shadow: 0 0.8rem 2.8rem var(--shadow-color);
+  backdrop-filter: blur(1.4rem);
+  -webkit-backdrop-filter: blur(1.4rem);
+}
+
+.project-slicer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  min-width: 23rem;
+}
+
+.project-slicer label {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.slicer-select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.slicer-select-wrap i {
+  position: absolute;
+  left: 1.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color);
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+.project-slicer select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 1.1rem 3.8rem 1.1rem 4.2rem;
+  border-radius: 0.9rem;
+  border: 0.1rem solid var(--border-color);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text-color);
+  font-size: 1.45rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.project-slicer select:focus {
+  outline: none;
+  border-color: var(--border-hover);
+  box-shadow: 0 0 0 0.3rem var(--glow-color);
+}
+
+.slicer-select-wrap::after {
+  content: '\ea4a';
+  font-family: 'boxicons';
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 1rem 2.8rem;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 0.4rem 1.5rem var(--shadow-color);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--button-gradient);
+  color: #ffffff;
+  border-color: transparent;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.8rem 2.5rem var(--main-glow);
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 3.5rem;
+}
+
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  border: 0.1rem solid var(--border-color);
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.15);
+  background: var(--card-bg);
+  transition: var(--transition);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(219, 39, 119, 0.05) 100%);
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.row:hover {
+  transform: translateY(-0.8rem);
+  border-color: var(--border-hover);
+  box-shadow: 0 1.5rem 4rem var(--secondary-glow);
+  background: var(--card-hover-bg);
+}
+
+.row:hover::before {
+  opacity: 1;
+}
+
+.project-preview {
+  position: relative;
+  z-index: 1;
+  height: 17rem;
+  overflow: hidden;
+  border-bottom: 0.1rem solid var(--border-color);
+  background: rgba(124, 58, 237, 0.08);
+}
+
+.project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.row:hover .project-preview img {
+  transform: scale(1.08);
+}
+
+.project-type {
+  position: absolute;
+  left: 1.8rem;
+  bottom: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.8rem;
+  background: rgba(3, 2, 20, 0.74);
+  border: 0.1rem solid rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+}
+
+.project-type i {
+  font-size: 1.7rem;
+}
+
+.light-mode .project-type {
+  background: rgba(255, 255, 255, 0.86);
+  color: #0f172a;
+  border-color: rgba(79, 70, 229, 0.18);
+}
+
+.project-card-body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  padding: 3.2rem;
+}
+
+.project-icon {
+  margin-bottom: 2rem;
+}
+
+.project-card-body h3 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.project-card-body .issuer {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1.8rem;
+}
+
+.project-card-body .desc {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2.2rem;
+  flex-grow: 1;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tech-tags span {
+  background: rgba(124, 58, 237, 0.08);
+  border: 0.1rem solid var(--border-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+}
+
+.light-mode .tech-tags span {
+  background: rgba(79, 70, 229, 0.06);
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.project-actions .verify-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.project-actions .btn-detail {
+  color: var(--text-secondary);
+}
+
+/* ========== CASE STUDY MODAL ========== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 2, 20, 0.7);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  padding: 2rem;
+}
+
+.light-mode .modal {
+  background: rgba(241, 245, 249, 0.7);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  width: 100%;
+  max-width: 65rem;
+  transform: scale(0.85);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal.active .modal-dialog {
+  transform: scale(1);
+}
+
+.modal-content {
+  background: var(--card-bg);
+  border: 0.1rem solid var(--border-color);
+  border-radius: 1.4rem;
+  padding: 4rem;
+  position: relative;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.light-mode .modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2rem 5rem rgba(148, 163, 184, 0.25);
+}
+
+/* Custom Scrollbar for Modal Content */
+.modal-content::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 0.3rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  background: none;
+  border: none;
+  font-size: 3.5rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.close-modal:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* Modal Body Content Styling */
+.modal-project-header {
+  margin-bottom: 2.5rem;
+}
+
+.modal-project-cat {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.modal-project-title {
+  font-size: 3.2rem;
+  color: var(--text-color);
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+}
+
+.modal-project-img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  border: 0.1rem solid var(--border-color);
+}
+
+.modal-section-title {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-section-title i {
+  color: var(--main-color);
+}
+
+.modal-project-desc {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.modal-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.modal-tech-badge {
+  background: rgba(124, 58, 237, 0.08);
+  border: 0.1rem solid var(--border-color);
+  color: var(--main-color);
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.light-mode .modal-tech-badge {
+  background: rgba(79, 70, 229, 0.06);
+}
+
+.modal-project-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.modal-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.modal-feature-item i {
+  color: #10b981;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}
+
+/* Modal CTA Buttons */
+.modal-cta-group {
+  display: flex;
+  gap: 1.8rem;
+  margin-top: 3.5rem;
+  border-top: 0.1rem solid var(--border-color);
+  padding-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.modal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem 2.8rem;
+  border-radius: 0.9rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.modal-btn-primary {
+  background: var(--button-gradient);
+  color: #ffffff;
+  border: 0.2rem solid transparent;
+  box-shadow: 0 0.5rem 1.8rem var(--main-glow);
+}
+
+.modal-btn-primary:hover {
+  background: transparent;
+  color: var(--text-color);
+  border-color: var(--main-color);
+  box-shadow: 0 0.8rem 2.5rem var(--main-glow);
+  transform: translateY(-0.3rem);
+}
+
+.modal-btn-secondary {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 0.2rem solid var(--border-color);
+  box-shadow: 0 0.4rem 1.2rem var(--shadow-color);
+}
+
+.modal-btn-secondary:hover {
+  background: var(--card-hover-bg);
+  border-color: var(--border-hover);
+  box-shadow: 0 0.6rem 1.8rem var(--glow-color);
+  transform: translateY(-0.3rem);
+}
+
+/* ========== PORTFOLIO RESPONSIVE ========== */
+@media (max-width: 480px) {
+  .project-filter-panel {
+    padding: 1.3rem;
+  }
+
+  .filter-buttons {
+    gap: 0.8rem;
+  }
+  
+  .filter-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-filter-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .project-slicer {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .filter-buttons {
+    justify-content: center;
+  }
+}

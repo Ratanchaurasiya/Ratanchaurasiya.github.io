@@ -1,0 +1,330 @@
+/* ========== ABOUT & TIMELINE JOURNEY STYLES ========== */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
+
+.about-img {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img .img-wrapper {
+  position: relative;
+  width: 30rem;
+  height: 36rem;
+  border-radius: 1.8rem;
+  background: var(--button-gradient);
+  padding: 0.6rem;
+  box-shadow: 0 1.5rem 3.5rem var(--shadow-color);
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%; /* Center the face for portrait photo */
+  border-radius: 1.3rem;
+}
+
+.about-text {
+  flex: 1.2;
+}
+
+.about-text h2 {
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.05rem;
+}
+
+.about-text h4 {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.about-info {
+  display: flex;
+  gap: 2.5rem;
+  margin: 3.5rem 0;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  background: var(--card-bg);
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--border-color);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  transition: var(--transition);
+  box-shadow: 0 0.4rem 1.5rem var(--shadow-color);
+}
+
+.info-box:hover {
+  transform: translateY(-0.3rem);
+  border-color: var(--border-hover);
+  background: var(--card-hover-bg);
+}
+
+.info-box i {
+  font-size: 2.4rem;
+  color: var(--main-color);
+}
+
+.info-box span {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* ========== TIMELINE (JOURNEY) ========== */
+.journey {
+  padding: 7rem 0 5rem;
+}
+
+.journey-header {
+  max-width: 76rem;
+  margin: 8rem auto 5rem;
+  text-align: center;
+}
+
+.journey-header .sub-title {
+  margin: 0 0 3.6rem;
+}
+
+.journey-kicker {
+  display: inline-flex;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.8rem;
+  background: rgba(56, 189, 248, 0.08);
+  border: 0.1rem solid var(--border-color);
+  color: var(--main-color);
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+  margin-bottom: 1.8rem;
+}
+
+.journey-header p {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.timeline {
+  position: relative;
+  max-width: 104rem;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  background: linear-gradient(to bottom, transparent, var(--main-color), var(--secondary-color), transparent);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.3rem;
+  opacity: 0.9;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1.2rem 4.8rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: var(--bg-color);
+  border: 0.35rem solid var(--main-color);
+  border-radius: 50%;
+  top: 3.2rem;
+  z-index: 2;
+  box-shadow: 0 0 1rem var(--main-glow);
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -0.9rem;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -0.9rem;
+}
+
+.timeline-content {
+  background: var(--card-bg);
+  padding: 2.6rem;
+  border-radius: 1.2rem;
+  border: 0.1rem solid var(--border-color);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  transition: var(--transition);
+  box-shadow: 0 0.8rem 3rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 0.3rem;
+  background: var(--button-gradient);
+  opacity: 0.85;
+}
+
+.timeline-content:hover {
+  transform: translateY(-0.5rem);
+  border-color: var(--border-hover);
+  box-shadow: 0 1.2rem 3.5rem var(--glow-color);
+  background: var(--card-hover-bg);
+}
+
+.timeline-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.4rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--border-color);
+  background: var(--card-bg);
+  box-shadow: 0 0.5rem 1.4rem var(--shadow-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-icon {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid var(--border-color);
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--main-color);
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-type {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--secondary-color);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.timeline-content h3 {
+  font-size: 2.05rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.timeline-content p {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.timeline-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+}
+
+.timeline-tools span {
+  background: rgba(56, 189, 248, 0.08);
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.7rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 650;
+  padding: 0.5rem 0.9rem;
+}
+
+/* ========== ABOUT & JOURNEY RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+  }
+  
+  .about-info {
+    justify-content: center;
+  }
+  
+  .timeline::before {
+    left: 2.1rem;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 5.8rem;
+    padding-right: 1.5rem;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-item::before {
+    left: 1.1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-img .img-wrapper {
+    width: 28rem;
+    height: 34rem;
+  }
+  
+  .about-text h2 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img .img-wrapper {
+    width: 23rem;
+    height: 28rem;
+  }
+}
