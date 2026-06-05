@@ -1,0 +1,228 @@
+/* ========== CONTACT SECTION STYLES ========== */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  flex-wrap: wrap;
+  padding-bottom: 7rem;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 32rem;
+}
+
+.contact-text h2 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.05rem;
+}
+
+.contact-text h4 {
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.contact-text p {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+  margin-bottom: 3.5rem;
+  line-height: 1.8;
+}
+
+.contact-list {
+  margin-bottom: 4rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+  color: var(--text-secondary);
+}
+
+.contact-list i {
+  font-size: 2.4rem;
+  color: var(--main-color);
+  background: var(--card-bg);
+  border: 0.1rem solid var(--border-color);
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.4rem 1.5rem var(--shadow-color);
+}
+
+.contact-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.6rem;
+  height: 4.6rem;
+  background: var(--card-bg);
+  border: 0.1rem solid var(--border-color);
+  border-radius: 1rem;
+  font-size: 2.2rem;
+  color: var(--text-color);
+  transition: var(--transition);
+  box-shadow: 0 0.4rem 1.5rem var(--shadow-color);
+}
+
+.contact-icons a:hover {
+  background: var(--button-gradient);
+  border-color: transparent;
+  color: #ffffff;
+  transform: translateY(-0.4rem);
+  box-shadow: 0 0.8rem 2.5rem var(--main-glow);
+}
+
+.contact-container {
+  flex: 1.2;
+  min-width: 32rem;
+  background: var(--card-bg);
+  padding: 4.5rem;
+  border-radius: 1.4rem;
+  border: 0.1rem solid var(--border-color);
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+}
+
+.contact-container:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 1.2rem 4rem var(--glow-color);
+}
+
+.contact-title {
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 700;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 0.3rem;
+  background: var(--button-gradient);
+  border-radius: 0.5rem;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 1.4rem 1.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.1rem solid var(--border-color);
+  border-radius: 0.9rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.light-mode .contact-container input,
+.light-mode .contact-container textarea {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none;
+  background: var(--card-hover-bg);
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 1.5rem var(--secondary-glow);
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 14rem;
+}
+
+.contact-container button {
+  padding: 1.5rem;
+  background: var(--button-gradient);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 0.5rem 1.8rem var(--main-glow);
+  letter-spacing: 0.05rem;
+}
+
+.contact-container button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.8rem 2.5rem var(--main-glow);
+  opacity: 0.95;
+}
+
+.form-message {
+  padding: 1.2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.form-message.success {
+  background: rgba(16, 185, 129, 0.15);
+  border: 0.1rem solid #10b981;
+  color: #10b981;
+}
+
+.form-message.error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 0.1rem solid #ef4444;
+  color: #ef4444;
+}
+
+/* Enhancing input/textarea focus states with premium neon glow */
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none;
+  background: var(--card-hover-bg);
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 2rem var(--secondary-glow);
+  transform: translateY(-0.1rem);
+}
+
+/* ========== CONTACT RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .contact {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
