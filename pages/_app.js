@@ -36,6 +36,10 @@ export default function App({ Component, pageProps }) {
 				<title>{title}</title>
 				<meta name="description" content={description} key="desc" />
 				<meta
+					name="google-site-verification"
+					content="r3QOJRFDVR6597KpBCGZoMgzDL7pAYWp9jgJuQFP_zw"
+				/>
+				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1.0"
 				/>
