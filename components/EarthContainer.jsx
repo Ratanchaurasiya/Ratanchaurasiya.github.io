@@ -10,7 +10,7 @@ function EarthContainer({ isMobile }) {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: true }}
-			className="xl:w-1/2 w-full md:w-2/3 md:h-auto h-[550px]"
+			className="xl:w-1/2 w-full md:w-1/2 h-[450px] sm:h-[520px] md:h-[600px] lg:h-[650px] xl:h-[700px] flex items-center justify-center relative my-auto"
 		>
 			<EarthCanvas isMobile={isMobile} />
 		</motion.div>

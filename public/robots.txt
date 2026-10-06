@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ratanchaurasiya-github-io.vercel.app/sitemap.xml
+Sitemap: https://ratanchaurasiya.github.io/sitemap.xml

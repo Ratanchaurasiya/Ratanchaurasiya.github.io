@@ -24,13 +24,14 @@ function Computers({ isMobile }) {
       <pointLight intensity={2} position={[-1, 1.3, 1]} color={"#804dee"} />
       <OrbitControls
         enableZoom={false}
+        enableRotate={!isMobile}
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
         enableDamping={true}
         dampingFactor={0.05}
         enablePan={false}
-        autoRotateSpeed={4}
-        autoRotate={isMobile && true}
+        autoRotateSpeed={3}
+        autoRotate={true}
         makeDefault
       />
       <ComputerModel
@@ -54,6 +55,7 @@ function ComputersCanvas({ isMobile }) {
         alpha: true,
       }}
       className="cursor-pointer"
+      style={{ touchAction: "pan-y", pointerEvents: isMobile ? "none" : "auto" }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <Computers isMobile={isMobile} />

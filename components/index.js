@@ -7,6 +7,11 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
+import GitHubStats from "./GitHubStats";
+import Achievements from "./Achievements";
+import Education from "./Education";
+import ResumeModal from "./ResumeModal";
+import CommandPalette from "./CommandPalette";
 
 export {
 	Hero,
@@ -17,5 +22,10 @@ export {
 	Works,
 	Feedbacks,
 	Contact,
-	StarsCanvas
+	StarsCanvas,
+	GitHubStats,
+	Achievements,
+	Education,
+	ResumeModal,
+	CommandPalette,
 };

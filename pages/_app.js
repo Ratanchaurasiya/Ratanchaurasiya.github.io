@@ -23,22 +23,17 @@ export default function App({ Component, pageProps }) {
 		}
 	}, [loading]);
 
-	const title = "Portfolio | Satyam Shorrf";
+	const title = "Ratan Chaurasiya | Full Stack Developer";
 	const description =
-		"Hello! I'm Satyam Shorrf, a passionate web developer and problem solver. Welcome to my portfolio";
-	const avatar =
-		"public/assets/avatar-meta.png";
-	const url = "https://3-d-portfolio-hbuqr3wbo-satyam-shorrfs-projects.vercel.app/";
+		"Ratan Chaurasiya is a Full Stack Developer and B.Tech Information Technology student specializing in web development, databases, responsive applications, and AI-assisted development.";
+	const url = "https://ratanchaurasiya.github.io/";
+	const avatar = "https://ratanchaurasiya.github.io/assets/avatar.png";
 
 	return (
 		<>
 			<Head>
 				<title>{title}</title>
 				<meta name="description" content={description} key="desc" />
-				<meta
-					name="google-site-verification"
-					content="r3QOJRFDVR6597KpBCGZoMgzDL7pAYWp9jgJuQFP_zw"
-				/>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1.0"
@@ -47,18 +42,23 @@ export default function App({ Component, pageProps }) {
 				<meta property="og:site_name" content={title}></meta>
 				<meta property="og:description" content={description} />
 				<meta property="og:image" content={avatar} />
-				<meta property="og:image:width" content="612" />
-				<meta property="og:image:height" content="612" />
+				<meta property="og:image:secure_url" content={avatar} />
+				<meta property="og:image:type" content="image/png" />
+				<meta property="og:image:width" content="640" />
+				<meta property="og:image:height" content="640" />
+				<meta property="og:image:alt" content="Ratan Chaurasiya" />
 				<meta property="og:url" content={url} />
 				<meta property="og:type" content="website" />
 
 				<meta property="twitter:image" content={avatar} />
 				<meta property="twitter:card" content="summary_large_image" />
-				<meta name="twitter:creator" content="@satyamshorrf" />
+				<meta name="twitter:creator" content="@RatanChaurasiya" />
 				<meta property="twitter:title" content={title} />
 				<meta property="twitter:description" content={description} />
 
 				<link rel="canonical" href={url} />
+				<link rel="icon" href="/favicon.ico" />
+				<link rel="shortcut icon" href="/favicon.ico" />
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
