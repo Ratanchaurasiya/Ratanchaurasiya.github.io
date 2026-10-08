@@ -117,7 +117,7 @@ const COMMANDS = [
     action: (helpers) => {
       helpers.close();
       window.open(
-        "https://www.linkedin.com/in/ratan-chaurasiya-82288733a",
+        "https://www.linkedin.com/in/ratan-codespace",
         "_blank"
       );
     },

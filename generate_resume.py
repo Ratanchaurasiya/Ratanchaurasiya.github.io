@@ -153,7 +153,7 @@ def build_resume(output_path):
         [
             Paragraph("Full Stack Developer • Data Analytics &amp; AI Specialist", subtitle_style),
             Paragraph("<a href='https://ratanchaurasiya.github.io'><font color='#1d4ed8'><u>ratanchaurasiya.github.io</u></font></a> &nbsp;|&nbsp; "
-                      "<a href='https://linkedin.com/in/ratan-chaurasiya-663806286'><font color='#1d4ed8'><u>LinkedIn</u></font></a> &nbsp;|&nbsp; "
+                      "<a href='https://www.linkedin.com/in/ratan-codespace'><font color='#1d4ed8'><u>LinkedIn</u></font></a> &nbsp;|&nbsp; "
                       "<a href='https://github.com/Ratanchaurasiya'><font color='#1d4ed8'><u>GitHub</u></font></a>",
                       job_meta_style)
         ]

@@ -900,7 +900,7 @@ const socials = [
   {
     id: "linkedin",
     icon: <LinkedInIcon />,
-    link: "https://www.linkedin.com/in/ratan-chaurasiya-663806286/",
+    link: "https://www.linkedin.com/in/ratan-codespace",
   },
   {
     id: "x",
@@ -910,7 +910,7 @@ const socials = [
   {
     id: "instagram",
     icon: <InstagramIcon />,
-    link: "https://instagram.com/ratanchaurasiya",
+    link: "https://www.instagram.com/ratan.codespace?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
   },
 ];
 

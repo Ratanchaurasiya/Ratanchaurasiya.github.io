@@ -59,7 +59,7 @@ Hi, I’m **Ratan Chaurasiya**, an Information Technology student at **Silver Oa
   <a href="https://ratanchaurasiya.github.io/" target="_blank">
     <img src="https://img.shields.io/badge/Live_Portfolio-804dee?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
   </a>
-  <a href="https://www.linkedin.com/in/ratan-chaurasiya-663806286/" target="_blank">
+  <a href="https://www.linkedin.com/in/ratan-codespace" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="https://github.com/Ratanchaurasiya" target="_blank">
