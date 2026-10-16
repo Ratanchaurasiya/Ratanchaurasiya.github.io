@@ -16,7 +16,7 @@ class SinglePageCanvas(canvas.Canvas):
         self.saveState()
         self.setFont("Helvetica", 7.5)
         self.setFillColor(colors.HexColor("#64748b"))
-        self.drawString(32, 16, "Ratan Chaurasiya • Portfolio: ratanchaurasiya.github.io • GitHub: github.com/Ratanchaurasiya")
+        self.drawString(32, 16, "Ratan Chaurasiya • Portfolio: ratanchaurasiya-github-io.vercel.app • GitHub: github.com/Ratanchaurasiya")
         self.drawRightString(580, 16, "ratanchaurasiya61@gmail.com | +91 63900 35039")
         self.setStrokeColor(colors.HexColor("#e2e8f0"))
         self.setLineWidth(0.5)
@@ -152,13 +152,13 @@ def build_resume(output_path):
         ],
         [
             Paragraph("Full Stack Developer • Data Analytics &amp; AI Specialist", subtitle_style),
-            Paragraph("<a href='https://ratanchaurasiya.github.io'><font color='#1d4ed8'><u>ratanchaurasiya.github.io</u></font></a> &nbsp;|&nbsp; "
+            Paragraph("<a href='https://ratanchaurasiya-github-io.vercel.app/'><font color='#1d4ed8'><u>ratanchaurasiya-github-io.vercel.app</u></font></a> &nbsp;|&nbsp; "
                       "<a href='https://www.linkedin.com/in/ratan-codespace'><font color='#1d4ed8'><u>LinkedIn</u></font></a> &nbsp;|&nbsp; "
                       "<a href='https://github.com/Ratanchaurasiya'><font color='#1d4ed8'><u>GitHub</u></font></a>",
                       job_meta_style)
         ]
     ]
-    header_table = Table(header_data, colWidths=[338, 210])
+    header_table = Table(header_data, colWidths=[290, 258])
     header_table.setStyle(TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
         ('LEFTPADDING', (0, 0), (-1, -1), 0),
